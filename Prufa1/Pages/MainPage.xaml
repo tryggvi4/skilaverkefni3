@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Prufa1"
+             xmlns:pages="clr-namespace:Prufa1.Pages;assembly=Prufa1"
+             x:Class="Prufa1.Pages.MainPage"
+             Title="Movie Search">
+    <ContentPage.Content>
+        <StackLayout Margin="20,40,20,20"
+                     VerticalOptions="Start"
+                     Spacing="10">
+            <Label Text="Search:"
+                HorizontalOptions="Start" />
+            <pages:EntryWithBorder x:Name="MovieEntry"
+                   Placeholder="Movie"/>
+            <pages:MyButton x:Name="SearchButton"
+                    Text="Search" 
+                    Clicked="SearchButton_OnClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
